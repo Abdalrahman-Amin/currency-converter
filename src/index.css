@@ -1,0 +1,76 @@
+.currency-converter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  .currency-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .currency-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgb(59 130 246 / 0.1);
+  }
+  
+  .currency-select {
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23475569'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5em 1.5em;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .currency-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgb(59 130 246 / 0.1);
+  }
+  
+  .converted-amount {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    min-width: 120px;
+    text-align: right;
+  }
+  
+  @media (max-width: 640px) {
+    .currency-converter {
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 1rem;
+    }
+    
+    .currency-input,
+    .currency-select {
+      width: 100%;
+    }
+    
+    .converted-amount {
+      width: 100%;
+      text-align: center;
+    }
+  }
