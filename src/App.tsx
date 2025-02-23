@@ -73,7 +73,9 @@ function App() {
             <option value="CAD">CAD</option>
             <option value="INR">INR</option>
          </select>
-         <p className="converted-amount">{convertedAmount}</p>
+         <p className="converted-amount">
+            {convertedAmount} {convertTo}
+         </p>
       </div>
    );
 }
